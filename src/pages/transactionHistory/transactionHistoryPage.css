@@ -1,0 +1,22 @@
+.card-bg-trans {
+    background-color: transparent !important;
+    box-shadow: none !important; 
+    margin: 0 !important;
+}
+
+.card-bg-trans .card-body {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+.card-body-txt {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.profile-text {
+   float: left;
+   width: 100%;
+}
+.profile-icon-text{
+    padding-right: 10px;
+}
