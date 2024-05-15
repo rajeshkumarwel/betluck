@@ -8,6 +8,7 @@ import { loginPlayer } from "../../store/loginPlayer/actions";
 import { toaster, successNotification, errorNotification, warningNotification } from "../../common-components/toaster/toaster";
 import 'react-notifications-component/dist/theme.css';
 import { useNavigate } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 
 const LoginPage = () => {
@@ -34,18 +35,19 @@ const LoginPage = () => {
 		onSubmit: async values => {
 			await new Promise(resolve => setTimeout(resolve, 500));
 			const payload = {
-				email: values.email,
+				player_email: values.email,
 			}
 			const data = {
 				loginPlayerData: payload
 			}
 			dispatch(
 				loginPlayer(data, (res) =>  {
-					if(res?.statusCode === 200) {
+					if(res === 'OTP was sent!') {
 						localStorage.setItem('Playeremail', values.email)
 						navigate('/verification')
 					} else {
-						if(res.response.data.statusCode === 404) {
+						
+						if(res.response.status === 404) {
 							// toaster(
 							// 	'Not found',
 							// 	res.response.data.message,
@@ -119,13 +121,13 @@ const LoginPage = () => {
 										</div>										
 										
 										<div className="d-grid gap-2 mt-3">
-											<button 
-											type="submit"
+											<Link  to={'/verification'}
+											//type="submit"
 											className="btn btn-lg btn-danger"
-											disabled={!loginPlayerLoader ? false:true}
+											//disabled={!loginPlayerLoader ? false:true}
 											>
-											{!loginPlayerLoader ? ('Send me OTP'):('Loading...')}
-											</button>
+											Send me OTP
+											</Link>
 										</div>
 									</form>
 								</div>

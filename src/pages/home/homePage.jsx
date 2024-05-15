@@ -1,14 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../../common-components/navbar/navbar";
 import Footer from "../../common-components/footer/footer";
-import csk from "../../assets/img/csk.png";
-import mi from "../../assets/img/mi.png";
-import srh from "../../assets/img/srh.png";
-import dc from "../../assets/img/dc.png";
 import { Link } from "react-router-dom";
+
 
 const HomePage = () => {
 
+	const [data, setData] = useState([]);
+
+	const getData = () => {
+		var requestOptions = {
+		  method: "GET",
+		  redirect: "follow",
+		};
+	
+		fetch(process.env.REACT_APP_BASE_API_URL+"/ip2024.json", requestOptions)
+		  .then((response) => response.json())
+		  .then((result) => {
+			setData(result)
+			console.info('result.................', result)
+	})
+		  .catch((error) => console.log("error", error));
+	  };
+	
+	  useEffect(() => {
+		getData();
+	  }, []);
     return(
         <div className="main">
 			<Navbar navitem={true}/>
@@ -19,37 +36,43 @@ const HomePage = () => {
 					<h1 className="h3 mb-3"><strong>Indian Premier League</strong></h1>
 
 					<div className="row">
+
+					{data?.map((item, index) => (
 						<div className="col-xl-6 col-xxl-5 d-flex">
 							<div className="card flex-fill w-100">
 								<div className="card-body">
 									<div className="row">
 										<div className="col-6 mt-0">
-											<h5 className="card-title">18:30, Today</h5>
+											<h5 className="card-title">{item.scheduleAdWrapper.date}</h5>
 										</div>
 										<div className="col-6 mt-0">
-											<h5 className="card-title text-end"><span className="badge bg-success">Live</span></h5>
+											<h5 className="card-title text-end">
+											{item.scheduleAdWrapper.matchScheduleList[0].matchInfo[0].matchDesc}
+											
+											{/* <span className="badge bg-success">Live</span> */}
+											</h5>
 										</div>
 									</div>
 									<div className="row log-items mt-3">
 										<div className="col-4 mt-0 log-items">
-											<img className="team-logo team-border-csk" src={csk} alt="CSK" />
+											<img className="team-logo team-border-mi" src={"logo/"+item.scheduleAdWrapper.matchScheduleList[0].matchInfo[0].team1.teamSName+".jpg"} alt={item.scheduleAdWrapper.matchScheduleList[0].matchInfo[0].team1.teamSName} />
 										</div>
 										<div className="col-4 mt-0 log-items">
 											<h1><strong>VS</strong></h1>
 										</div>
 										<div className="col-4 mt-0 log-items">
-										<img className="team-logo team-border-mi" src={mi} alt="MI" />
+										<img className="team-logo team-border-mi" src={"logo/"+item.scheduleAdWrapper.matchScheduleList[0].matchInfo[0].team2.teamSName+".jpg"} alt={item.scheduleAdWrapper.matchScheduleList[0].matchInfo[0].team2.teamSName} />
 										</div>
 									</div>
 									<div className="row log-items mt-3">
 										<div className="col-4 mt-0 log-items">
-											<h5 className="card-title">CSK</h5>
+											<h5 className="card-title">{item.scheduleAdWrapper.matchScheduleList[0].matchInfo[0].team1.teamSName}</h5>
 										</div>
 										<div className="col-4 mt-0 log-items">
 											
 										</div>
 										<div className="col-4 mt-0 log-items">
-										<h5 className="card-title">MI</h5>
+										<h5 className="card-title">{item.scheduleAdWrapper.matchScheduleList[0].matchInfo[0].team2.teamSName}</h5>
 										</div>
 									</div>
 									<div className="row log-items mt-3">
@@ -68,7 +91,7 @@ const HomePage = () => {
 													<div className="col-12">
 														<div className="card place-card">
 															<div className="card-body card-body-txt">
-															<Link to={'/'}>
+															<Link to={'/home1'}>
 																<div className="d-flex">
 																	<div className="col mt-0 profile-text">
 																		<h5 className="card-title mb-0">Place your bets </h5>    
@@ -86,8 +109,9 @@ const HomePage = () => {
 								</div>
 							</div>
 						</div>
+					))}
 
-						<div className="col-xl-6 col-xxl-7">
+						{/* <div className="col-xl-6 col-xxl-7">
 							<div className="card flex-fill w-100">
 							<div className="card-body">
 									<div className="row">
@@ -156,7 +180,7 @@ const HomePage = () => {
 									</div>
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 
 					

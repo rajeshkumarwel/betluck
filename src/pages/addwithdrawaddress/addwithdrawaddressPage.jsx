@@ -12,8 +12,8 @@ const AddwithdrawaddressPage = () => {
 
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
-	const { id } = useParams();
-
+	const { id, update } = useParams();
+	
 	const updatePlayerupiLoader = useSelector((state) => state.addPlayerList.updatePlayerupiLoader)
 
 	const initialValues = {
@@ -40,7 +40,11 @@ const AddwithdrawaddressPage = () => {
 			dispatch(
 				updatePlayerupi(data, (res) =>  {
 					if(res?.statusCode === 200) {
-						navigate('/personalinfo/'+id)
+						if(!update) {
+							navigate('/personalinfo/'+id)
+						} else {
+							navigate('/withdraw/')
+						}
 					}
 				})
 			)
@@ -103,12 +107,12 @@ const AddwithdrawaddressPage = () => {
 							
 							
 							<div className="d-grid gap-2 mt-3">
-								<button type="submit"
+								<Link to={"/personalinfo/2"}
 								 className="btn btn-lg btn-danger">
 									
-									{!updatePlayerupiLoader ? ('Save details'):('Loading...')}
+									Save details
 									
-									</button>
+									</Link>
 							</div>
 						</form>
 							

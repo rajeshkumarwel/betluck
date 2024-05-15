@@ -107,7 +107,7 @@ const ManagePlayerPage1 = () => {
 					</div>
 
                     <div className="text-center mb-3">
-							<Link to={'/personalinfo'}>Go Back</Link>
+							<Link to={'/personalinfo/2'}>Go Back</Link>
 						</div>
 				</div>
 			</main>

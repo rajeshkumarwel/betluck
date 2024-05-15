@@ -54,6 +54,7 @@ const routes = (props) => {
 
                     <Route path="/fullname/:id" element={<FullnameContainer />} />
                     <Route path="/addwithdrawaddress/:id" element={<AddwithdrawaddressContainer />} />
+                    <Route path="/addwithdrawaddress/:id/:update" element={<AddwithdrawaddressContainer />} />
                     <Route path="/personalinfoupdate1" element={<PersonalInfoUpdateContainer1 />} />
                     <Route path="/personalinfoupdate2" element={<PersonalInfoUpdateContainer2 />} />
                     <Route path="/profile1" element={<ProfileContainer1 />} />

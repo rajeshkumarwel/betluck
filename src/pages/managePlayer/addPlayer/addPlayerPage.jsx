@@ -179,15 +179,15 @@ const AddPlayerPage = () => {
 								
 								
 								<div className="d-grid gap-2 mt-3">
-									<button
-									 type="submit"
+									<Link
+									 to={"/manageplayer/addplayer1"}
 									 className="btn btn-lg btn-danger"
-									 disabled={!addPlayerLoader ? false:true}
+									// disabled={!addPlayerLoader ? false:true}
 									 >
 										
-										{!addPlayerLoader ? ('Add Player'):('Loading...')}
+										Add Player
 										
-										</button>
+										</Link>
 								</div>
 							</form>
 								

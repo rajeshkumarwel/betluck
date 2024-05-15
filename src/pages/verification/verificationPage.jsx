@@ -25,7 +25,7 @@ const VerificationPage = () => {
 	}
 	const digitsOnly = (value) => /^\d+$/.test(value)
 	const validationSchema = Yup.object({
-		otp: Yup.string().length(7, 'Must be a valid OTP').required('OTP is required').test('Digits only', digitsOnly)
+		otp: Yup.string().length(6, 'Must be a valid OTP').required('OTP is required').test('Digits only', digitsOnly)
 	})
 
 	const formik = useFormik({
@@ -34,19 +34,21 @@ const VerificationPage = () => {
 		onSubmit: async values => {
 			await new Promise(resolve => setTimeout(resolve, 500));
 			const payload = {
-				OTP: values.otp,
+				player_email: localStorage.getItem('Playeremail'),
+				otp: values.otp,
 			}
 			const data = {
 				otpData: payload
 			}
 			dispatch(
-				loginPlayerVerification(data, (res) =>  { 
-					if(res?.statusCode === 200) {
-						localStorage.setItem('AccountId', res.player.playerId)
-						localStorage.setItem('PlayerEmail', res.player.email)
+				loginPlayerVerification(data, (res) =>  {
+					if(res?.player_email) {
+						localStorage.setItem('AccountId', res.player_id)
+						localStorage.setItem('PlayerEmail', res.player_email)
+						localStorage.setItem('PlayerRole', res.player_role)
 						navigate('/home')
 					} else {
-						if(res.response.data.statusCode === 401) {
+						if(res?.response?.status === 401) {
 							// toaster(
 							// 	'Not found',
 							// 	res.response.data.message,
@@ -64,17 +66,19 @@ const VerificationPage = () => {
 
 	const handleResendOTP = () => {
 		const payload = {
-			email: localStorage.getItem('Playeremail'),
+			player_email: localStorage.getItem('Playeremail'),
 		}
 		const data = {
 			loginPlayerData: payload
 		}
 		dispatch(
 			loginPlayer(data, (res) =>  {
-				if(res?.statusCode === 200) {
+				if(res === 'OTP was sent!') {
+					setStatus(true);
+					setStatusMessage('OTP is sent to your email!')
 					navigate('/verification')
 				} else {
-					if(res.response.data.statusCode === 404) {
+					if(res.response.status === 404) {
 						// toaster(
 						// 	'Not found',
 						// 	res.response.data.message,
@@ -103,7 +107,7 @@ const VerificationPage = () => {
 								Sign in to your account to continue
 							</p>
 						</div>
-						{loginPlayerRes?.message && !status &&
+						{loginPlayerRes && !status &&
 						<div className="row">
 							<div className="col-xl-6 col-xxl-5 d-flex">
 								<div className="w-100">
@@ -170,16 +174,16 @@ const VerificationPage = () => {
 											</div>
 										</div>
 										<div className="d-grid gap-2 mt-3">
-											<button 
-											type="submit"
+											<Link to={'/home'}
+											
 											 className="btn btn-lg btn-danger"
-											 disabled={!loginPlayerotpLoader ? false:true}
+											
 											 >
-												{!loginPlayerotpLoader ? ('Login'):('Loading...')}
-												</button>
+												Login
+												</Link>
 										</div>
                                         <div className="d-grid gap-2 mt-3">
-											<Link to={"#"} onClick={()=> handleResendOTP()} className="btn btn-lg btn-primary">Resend OTP</Link>
+											<Link to={"#"} className="btn btn-lg btn-primary">Resend OTP</Link>
 										</div>
 									</form>
 								</div>

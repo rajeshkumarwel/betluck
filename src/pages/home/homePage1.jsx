@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../../common-components/navbar/navbar";
 import Footer from "../../common-components/footer/footer";
 import csk from "../../assets/img/csk.png";
@@ -8,6 +8,29 @@ import dc from "../../assets/img/dc.png";
 import { Link } from "react-router-dom";
 
 const HomePage1 = () => {
+
+	const [stake1, setStake1] = useState();
+	const [stake2, setStake2] = useState();
+	const [returns1, setReturns1] = useState("00.00");
+	const [returns2, setReturns2] = useState("00.00");
+	const [totalReturns, setTotalReturns] = useState("00.00")
+
+	const stake1Handler = (e) => {
+		setStake1(e.target.value)
+		let ret1 = 2*e.target.value;
+		setReturns1(ret1)
+	}
+
+	const stake2Handler = (e) => {
+		setStake2(e.target.value)
+		let ret2 = 2*e.target.value;
+		setReturns2(ret2)
+	}
+
+	useEffect(()=> {
+		let returns  = parseInt(returns1)+parseInt(returns2)
+		setTotalReturns(returns)
+	}, [returns1, returns2])
 
     return(
         <div className="main">
@@ -89,7 +112,7 @@ const HomePage1 = () => {
 												<div className="col-6 mt-0">
 													<div className="mb-3">
 														<label className="form-label">STAKE</label>
-														<input style={{border:'1px solid #f00'}} className="form-control form-control-lg" type="text" name="email" placeholder="" value={'5000'} />
+														<input style={{border:'1px solid #f00'}} className="form-control form-control-lg" type="text" name="stake1" placeholder="" value={stake1}  onChange={stake1Handler} />
 													</div>	
 												</div>
 											</div>
@@ -99,7 +122,7 @@ const HomePage1 = () => {
 												</div>
 												<div className="col-7 mt-0 text-end">
 													<div className="mb-3">
-														<label className="form-label">Returns:<i className="bi bi-currency-rupee"></i> 10,000.00</label>
+														<label className="form-label">Returns:<i className="bi bi-currency-rupee"></i> {returns1}</label>
 													</div>	
 												</div>
 											</div>
@@ -121,7 +144,7 @@ const HomePage1 = () => {
 												<div className="col-6 mt-0">
 													<div className="mb-3">
 														<label className="form-label">STAKE</label>
-														<input style={{border: '1px solid #f00'}} className="form-control form-control-lg" type="text" name="email" placeholder="" value={''} />
+														<input style={{border: '1px solid #f00'}} className="form-control form-control-lg" type="text" name="stake2" placeholder="" value={stake2} onChange={stake2Handler}  />
 													</div>	
 												</div>
 											</div>
@@ -131,13 +154,13 @@ const HomePage1 = () => {
 												</div>
 												<div className="col-7 mt-0 text-end">
 													<div className="mb-3">
-														<label className="form-label">Returns:<i className="bi bi-currency-rupee"></i> 00.00</label>
+														<label className="form-label">Returns:<i className="bi bi-currency-rupee"></i> {returns2}</label>
 													</div>	
 												</div>
 											</div>
 									</div>
 									<div className="d-grid gap-2 mt-3">
-										<Link to={'/'} className="btn btn-lg btn-danger">Place a bet</Link>
+										<Link to={'/profile'} className="btn btn-lg btn-danger">Place a bet</Link>
 									</div>
 								</div>
 
@@ -175,7 +198,7 @@ const HomePage1 = () => {
 															<h5 className="card-title">Total Bets</h5>
 														</div>
 														<div className="col-6 mt-0">
-															<h5 className="card-title text-end"><i className="bi bi-currency-rupee"></i> 6000.00</h5>
+															<h5 className="card-title text-end"><i className="bi bi-currency-rupee"></i> {totalReturns}</h5>
 														</div>
 													</div> 
 													<hr/>
@@ -184,7 +207,7 @@ const HomePage1 = () => {
 																<h5 className="card-title">Toss odds</h5>
 															</div>
 															<div className="col-6 mt-0">
-																<h5 className="card-title text-end">2.00   3500.00</h5>
+																<h5 className="card-title text-end">2.00   {returns1}</h5>
 															</div>
 														</div> 
 														<div className="row">
@@ -192,7 +215,7 @@ const HomePage1 = () => {
 																<h5 className="card-title">Toss odds</h5>
 															</div>
 															<div className="col-6 mt-0">
-																<h5 className="card-title text-end">2.00   2500.00</h5>
+																<h5 className="card-title text-end">2.00   {returns2}</h5>
 															</div>
 														</div> 
 													</div>

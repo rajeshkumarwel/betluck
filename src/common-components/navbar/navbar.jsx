@@ -1,20 +1,30 @@
 import React, { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Logo from "../../assets/img/logo.png";
+import { useSelector, useDispatch } from 'react-redux';
+import { playerInformation } from "../../store/playerInformation/actions";
 
 const Navbar = (props) => {
 
+	const dispatch = useDispatch();
 	const navigate = useNavigate();
 
-	useEffect(()=>{
-		if(!localStorage.getItem('AccountId')) {
-			navigate('/')
-		}
-	},[])
+	// useEffect(()=>{
+	// 	if(!localStorage.getItem('AccountId')) {
+	// 		navigate('/')
+	// 	}
+	// },[])
 
 	const handleLogout = () => { 
 		 localStorage.clear();
 	}
+	useEffect(()=>{
+		const playerinfo = {
+			playerId: localStorage.getItem('AccountId')
+		}
+		dispatch(playerInformation(playerinfo))
+	},[])
+	const playerInfomation = useSelector((state) => state.playerInformationList.playerInformation)
 
     return(
 			<nav className="navbar navbar-expand navbar-light navbar-bg">
@@ -26,7 +36,7 @@ const Navbar = (props) => {
 						<li className="nav-item dropdown">
                         {props.navitem ?
 							<Link className="nav-link dropdown-toggle" data-bs-toggle="dropdown" style={{fontSize: "20px", fontWeight: "bold"}}> 
-                                <i className="bi bi-currency-rupee"></i> 00.00 <span className="pi pi-user"></span>
+                                <i className="bi bi-currency-rupee"></i> {playerInfomation?.player?.balance ? playerInfomation?.player?.balance: "00.00"} <span className="pi pi-user"></span>
                             </Link>
                             :
                             <Link className="nav-link" to={'/home'}>                            

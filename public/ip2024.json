@@ -1,0 +1,1612 @@
+[
+  {
+    "scheduleAdWrapper": {
+      "date": "MON, APR 22 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91497,
+              "seriesId": 7607,
+              "matchDesc": "38th Match",
+              "matchFormat": "T20",
+              "startDate": "1713794400000",
+              "endDate": "1713830399000",
+              "team1": {
+                "teamId": 64,
+                "teamName": "Rajasthan Royals",
+                "teamSName": "RR",
+                "imageId": 225647
+              },
+              "team2": {
+                "teamId": 62,
+                "teamName": "Mumbai Indians",
+                "teamSName": "MI",
+                "imageId": 225645
+              },
+              "venueInfo": {
+                "ground": "Sawai Mansingh Stadium",
+                "city": "Jaipur",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1713744000000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "TUE, APR 23 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91506,
+              "seriesId": 7607,
+              "matchDesc": "39th Match",
+              "matchFormat": "T20",
+              "startDate": "1713880800000",
+              "endDate": "1713916799000",
+              "team1": {
+                "teamId": 58,
+                "teamName": "Chennai Super Kings",
+                "teamSName": "CSK",
+                "imageId": 225641
+              },
+              "team2": {
+                "teamId": 966,
+                "teamName": "Lucknow Super Giants",
+                "teamSName": "LSG",
+                "imageId": 389444
+              },
+              "venueInfo": {
+                "ground": "MA Chidambaram Stadium",
+                "city": "Chennai",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1713830400000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "WED, APR 24 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "CSA T20 Challenge 2024",
+          "matchInfo": [
+            {
+              "matchId": 90715,
+              "seriesId": 7663,
+              "matchDesc": "1st Semi Final",
+              "matchFormat": "T20",
+              "startDate": "1713974400000",
+              "endDate": "1714003199000",
+              "team1": {
+                "teamId": 106,
+                "teamName": "TBC",
+                "teamSName": "TBC",
+                "imageId": 172198
+              },
+              "team2": {
+                "teamId": 106,
+                "teamName": "TBC",
+                "teamSName": "TBC",
+                "imageId": 172198
+              },
+              "venueInfo": {
+                "ground": "TBC",
+                "city": "TBC",
+                "country": "TBC",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7663,
+          "seriesHomeCountry": 1,
+          "seriesCategory": "League"
+        },
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91515,
+              "seriesId": 7607,
+              "matchDesc": "40th Match",
+              "matchFormat": "T20",
+              "startDate": "1713967200000",
+              "endDate": "1714003199000",
+              "team1": {
+                "teamId": 61,
+                "teamName": "Delhi Capitals",
+                "teamSName": "DC",
+                "imageId": 225644
+              },
+              "team2": {
+                "teamId": 971,
+                "teamName": "Gujarat Titans",
+                "teamSName": "GT",
+                "imageId": 235085
+              },
+              "venueInfo": {
+                "ground": "Arun Jaitley Stadium",
+                "city": "Delhi",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1713916800000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "THU, APR 25 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "CSA T20 Challenge 2024",
+          "matchInfo": [
+            {
+              "matchId": 90722,
+              "seriesId": 7663,
+              "matchDesc": "2nd Semi Final",
+              "matchFormat": "T20",
+              "startDate": "1714060800000",
+              "endDate": "1714089599000",
+              "team1": {
+                "teamId": 106,
+                "teamName": "TBC",
+                "teamSName": "TBC",
+                "imageId": 172198
+              },
+              "team2": {
+                "teamId": 106,
+                "teamName": "TBC",
+                "teamSName": "TBC",
+                "imageId": 172198
+              },
+              "venueInfo": {
+                "ground": "TBC",
+                "city": "TBC",
+                "country": "TBC",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7663,
+          "seriesHomeCountry": 1,
+          "seriesCategory": "League"
+        },
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91524,
+              "seriesId": 7607,
+              "matchDesc": "41st Match",
+              "matchFormat": "T20",
+              "startDate": "1714053600000",
+              "endDate": "1714089599000",
+              "team1": {
+                "teamId": 255,
+                "teamName": "Sunrisers Hyderabad",
+                "teamSName": "SRH",
+                "imageId": 225649
+              },
+              "team2": {
+                "teamId": 59,
+                "teamName": "Royal Challengers Bengaluru",
+                "teamSName": "RCB",
+                "imageId": 225643
+              },
+              "venueInfo": {
+                "ground": "Rajiv Gandhi International Stadium",
+                "city": "Hyderabad",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1714003200000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "FRI, APR 26 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91528,
+              "seriesId": 7607,
+              "matchDesc": "42nd Match",
+              "matchFormat": "T20",
+              "startDate": "1714140000000",
+              "endDate": "1714175999000",
+              "team1": {
+                "teamId": 63,
+                "teamName": "Kolkata Knight Riders",
+                "teamSName": "KKR",
+                "imageId": 225646
+              },
+              "team2": {
+                "teamId": 65,
+                "teamName": "Punjab Kings",
+                "teamSName": "PBKS",
+                "imageId": 225648
+              },
+              "venueInfo": {
+                "ground": "Eden Gardens",
+                "city": "Kolkata",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1714089600000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "SAT, APR 27 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91533,
+              "seriesId": 7607,
+              "matchDesc": "43rd Match",
+              "matchFormat": "T20",
+              "startDate": "1714212000000",
+              "endDate": "1714262399000",
+              "team1": {
+                "teamId": 61,
+                "teamName": "Delhi Capitals",
+                "teamSName": "DC",
+                "imageId": 225644
+              },
+              "team2": {
+                "teamId": 62,
+                "teamName": "Mumbai Indians",
+                "teamSName": "MI",
+                "imageId": 225645
+              },
+              "venueInfo": {
+                "ground": "Arun Jaitley Stadium",
+                "city": "Delhi",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            },
+            {
+              "matchId": 91542,
+              "seriesId": 7607,
+              "matchDesc": "44th Match",
+              "matchFormat": "T20",
+              "startDate": "1714226400000",
+              "endDate": "1714262399000",
+              "team1": {
+                "teamId": 966,
+                "teamName": "Lucknow Super Giants",
+                "teamSName": "LSG",
+                "imageId": 389444
+              },
+              "team2": {
+                "teamId": 64,
+                "teamName": "Rajasthan Royals",
+                "teamSName": "RR",
+                "imageId": 225647
+              },
+              "venueInfo": {
+                "ground": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+                "city": "Lucknow",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1714176000000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "SUN, APR 28 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "CSA T20 Challenge 2024",
+          "matchInfo": [
+            {
+              "matchId": 90729,
+              "seriesId": 7663,
+              "matchDesc": "Final",
+              "matchFormat": "T20",
+              "startDate": "1714320000000",
+              "endDate": "1714348799000",
+              "team1": {
+                "teamId": 106,
+                "teamName": "TBC",
+                "teamSName": "TBC",
+                "imageId": 172198
+              },
+              "team2": {
+                "teamId": 106,
+                "teamName": "TBC",
+                "teamSName": "TBC",
+                "imageId": 172198
+              },
+              "venueInfo": {
+                "ground": "TBC",
+                "city": "TBC",
+                "country": "TBC",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7663,
+          "seriesHomeCountry": 1,
+          "seriesCategory": "League"
+        },
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91551,
+              "seriesId": 7607,
+              "matchDesc": "45th Match",
+              "matchFormat": "T20",
+              "startDate": "1714298400000",
+              "endDate": "1714348799000",
+              "team1": {
+                "teamId": 971,
+                "teamName": "Gujarat Titans",
+                "teamSName": "GT",
+                "imageId": 235085
+              },
+              "team2": {
+                "teamId": 59,
+                "teamName": "Royal Challengers Bengaluru",
+                "teamSName": "RCB",
+                "imageId": 225643
+              },
+              "venueInfo": {
+                "ground": "Narendra Modi Stadium",
+                "city": "Ahmedabad",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            },
+            {
+              "matchId": 91555,
+              "seriesId": 7607,
+              "matchDesc": "46th Match",
+              "matchFormat": "T20",
+              "startDate": "1714312800000",
+              "endDate": "1714348799000",
+              "team1": {
+                "teamId": 58,
+                "teamName": "Chennai Super Kings",
+                "teamSName": "CSK",
+                "imageId": 225641
+              },
+              "team2": {
+                "teamId": 255,
+                "teamName": "Sunrisers Hyderabad",
+                "teamSName": "SRH",
+                "imageId": 225649
+              },
+              "venueInfo": {
+                "ground": "MA Chidambaram Stadium",
+                "city": "Chennai",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1714262400000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "MON, APR 29 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91564,
+              "seriesId": 7607,
+              "matchDesc": "47th Match",
+              "matchFormat": "T20",
+              "startDate": "1714399200000",
+              "endDate": "1714435199000",
+              "team1": {
+                "teamId": 63,
+                "teamName": "Kolkata Knight Riders",
+                "teamSName": "KKR",
+                "imageId": 225646
+              },
+              "team2": {
+                "teamId": 61,
+                "teamName": "Delhi Capitals",
+                "teamSName": "DC",
+                "imageId": 225644
+              },
+              "venueInfo": {
+                "ground": "Eden Gardens",
+                "city": "Kolkata",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1714348800000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "TUE, APR 30 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91569,
+              "seriesId": 7607,
+              "matchDesc": "48th Match",
+              "matchFormat": "T20",
+              "startDate": "1714485600000",
+              "endDate": "1714521599000",
+              "team1": {
+                "teamId": 966,
+                "teamName": "Lucknow Super Giants",
+                "teamSName": "LSG",
+                "imageId": 389444
+              },
+              "team2": {
+                "teamId": 62,
+                "teamName": "Mumbai Indians",
+                "teamSName": "MI",
+                "imageId": 225645
+              },
+              "venueInfo": {
+                "ground": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+                "city": "Lucknow",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1714435200000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "WED, MAY 01 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91578,
+              "seriesId": 7607,
+              "matchDesc": "49th Match",
+              "matchFormat": "T20",
+              "startDate": "1714572000000",
+              "endDate": "1714607999000",
+              "team1": {
+                "teamId": 58,
+                "teamName": "Chennai Super Kings",
+                "teamSName": "CSK",
+                "imageId": 225641
+              },
+              "team2": {
+                "teamId": 65,
+                "teamName": "Punjab Kings",
+                "teamSName": "PBKS",
+                "imageId": 225648
+              },
+              "venueInfo": {
+                "ground": "MA Chidambaram Stadium",
+                "city": "Chennai",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1714521600000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "THU, MAY 02 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91587,
+              "seriesId": 7607,
+              "matchDesc": "50th Match",
+              "matchFormat": "T20",
+              "startDate": "1714658400000",
+              "endDate": "1714694399000",
+              "team1": {
+                "teamId": 255,
+                "teamName": "Sunrisers Hyderabad",
+                "teamSName": "SRH",
+                "imageId": 225649
+              },
+              "team2": {
+                "teamId": 64,
+                "teamName": "Rajasthan Royals",
+                "teamSName": "RR",
+                "imageId": 225647
+              },
+              "venueInfo": {
+                "ground": "Rajiv Gandhi International Stadium",
+                "city": "Hyderabad",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1714608000000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "FRI, MAY 03 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91596,
+              "seriesId": 7607,
+              "matchDesc": "51st Match",
+              "matchFormat": "T20",
+              "startDate": "1714744800000",
+              "endDate": "1714780799000",
+              "team1": {
+                "teamId": 62,
+                "teamName": "Mumbai Indians",
+                "teamSName": "MI",
+                "imageId": 225645
+              },
+              "team2": {
+                "teamId": 63,
+                "teamName": "Kolkata Knight Riders",
+                "teamSName": "KKR",
+                "imageId": 225646
+              },
+              "venueInfo": {
+                "ground": "Wankhede Stadium",
+                "city": "Mumbai",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1714694400000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "SAT, MAY 04 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91600,
+              "seriesId": 7607,
+              "matchDesc": "52nd Match",
+              "matchFormat": "T20",
+              "startDate": "1714831200000",
+              "endDate": "1714867199000",
+              "team1": {
+                "teamId": 59,
+                "teamName": "Royal Challengers Bengaluru",
+                "teamSName": "RCB",
+                "imageId": 225643
+              },
+              "team2": {
+                "teamId": 971,
+                "teamName": "Gujarat Titans",
+                "teamSName": "GT",
+                "imageId": 235085
+              },
+              "venueInfo": {
+                "ground": "M.Chinnaswamy Stadium",
+                "city": "Bengaluru",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1714780800000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "SUN, MAY 05 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91609,
+              "seriesId": 7607,
+              "matchDesc": "53rd Match",
+              "matchFormat": "T20",
+              "startDate": "1714903200000",
+              "endDate": "1714953599000",
+              "team1": {
+                "teamId": 65,
+                "teamName": "Punjab Kings",
+                "teamSName": "PBKS",
+                "imageId": 225648
+              },
+              "team2": {
+                "teamId": 58,
+                "teamName": "Chennai Super Kings",
+                "teamSName": "CSK",
+                "imageId": 225641
+              },
+              "venueInfo": {
+                "ground": "Himachal Pradesh Cricket Association Stadium",
+                "city": "Dharamsala",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            },
+            {
+              "matchId": 91618,
+              "seriesId": 7607,
+              "matchDesc": "54th Match",
+              "matchFormat": "T20",
+              "startDate": "1714917600000",
+              "endDate": "1714953599000",
+              "team1": {
+                "teamId": 966,
+                "teamName": "Lucknow Super Giants",
+                "teamSName": "LSG",
+                "imageId": 389444
+              },
+              "team2": {
+                "teamId": 63,
+                "teamName": "Kolkata Knight Riders",
+                "teamSName": "KKR",
+                "imageId": 225646
+              },
+              "venueInfo": {
+                "ground": "Bharat Ratna Shri Atal Bihari Vajpayee Ekana Cricket Stadium",
+                "city": "Lucknow",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1714867200000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "MON, MAY 06 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91623,
+              "seriesId": 7607,
+              "matchDesc": "55th Match",
+              "matchFormat": "T20",
+              "startDate": "1715004000000",
+              "endDate": "1715039999000",
+              "team1": {
+                "teamId": 62,
+                "teamName": "Mumbai Indians",
+                "teamSName": "MI",
+                "imageId": 225645
+              },
+              "team2": {
+                "teamId": 255,
+                "teamName": "Sunrisers Hyderabad",
+                "teamSName": "SRH",
+                "imageId": 225649
+              },
+              "venueInfo": {
+                "ground": "Wankhede Stadium",
+                "city": "Mumbai",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1714953600000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "TUE, MAY 07 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91632,
+              "seriesId": 7607,
+              "matchDesc": "56th Match",
+              "matchFormat": "T20",
+              "startDate": "1715090400000",
+              "endDate": "1715126399000",
+              "team1": {
+                "teamId": 61,
+                "teamName": "Delhi Capitals",
+                "teamSName": "DC",
+                "imageId": 225644
+              },
+              "team2": {
+                "teamId": 64,
+                "teamName": "Rajasthan Royals",
+                "teamSName": "RR",
+                "imageId": 225647
+              },
+              "venueInfo": {
+                "ground": "Arun Jaitley Stadium",
+                "city": "Delhi",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1715040000000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "WED, MAY 08 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91641,
+              "seriesId": 7607,
+              "matchDesc": "57th Match",
+              "matchFormat": "T20",
+              "startDate": "1715176800000",
+              "endDate": "1715212799000",
+              "team1": {
+                "teamId": 255,
+                "teamName": "Sunrisers Hyderabad",
+                "teamSName": "SRH",
+                "imageId": 225649
+              },
+              "team2": {
+                "teamId": 966,
+                "teamName": "Lucknow Super Giants",
+                "teamSName": "LSG",
+                "imageId": 389444
+              },
+              "venueInfo": {
+                "ground": "Rajiv Gandhi International Stadium",
+                "city": "Hyderabad",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1715126400000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "THU, MAY 09 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91645,
+              "seriesId": 7607,
+              "matchDesc": "58th Match",
+              "matchFormat": "T20",
+              "startDate": "1715263200000",
+              "endDate": "1715299199000",
+              "team1": {
+                "teamId": 65,
+                "teamName": "Punjab Kings",
+                "teamSName": "PBKS",
+                "imageId": 225648
+              },
+              "team2": {
+                "teamId": 59,
+                "teamName": "Royal Challengers Bengaluru",
+                "teamSName": "RCB",
+                "imageId": 225643
+              },
+              "venueInfo": {
+                "ground": "Himachal Pradesh Cricket Association Stadium",
+                "city": "Dharamsala",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1715212800000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "FRI, MAY 10 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91650,
+              "seriesId": 7607,
+              "matchDesc": "59th Match",
+              "matchFormat": "T20",
+              "startDate": "1715349600000",
+              "endDate": "1715385599000",
+              "team1": {
+                "teamId": 971,
+                "teamName": "Gujarat Titans",
+                "teamSName": "GT",
+                "imageId": 235085
+              },
+              "team2": {
+                "teamId": 58,
+                "teamName": "Chennai Super Kings",
+                "teamSName": "CSK",
+                "imageId": 225641
+              },
+              "venueInfo": {
+                "ground": "Narendra Modi Stadium",
+                "city": "Ahmedabad",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1715299200000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "SAT, MAY 11 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91654,
+              "seriesId": 7607,
+              "matchDesc": "60th Match",
+              "matchFormat": "T20",
+              "startDate": "1715436000000",
+              "endDate": "1715471999000",
+              "team1": {
+                "teamId": 63,
+                "teamName": "Kolkata Knight Riders",
+                "teamSName": "KKR",
+                "imageId": 225646
+              },
+              "team2": {
+                "teamId": 62,
+                "teamName": "Mumbai Indians",
+                "teamSName": "MI",
+                "imageId": 225645
+              },
+              "venueInfo": {
+                "ground": "Eden Gardens",
+                "city": "Kolkata",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1715385600000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "SUN, MAY 12 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91663,
+              "seriesId": 7607,
+              "matchDesc": "61st Match",
+              "matchFormat": "T20",
+              "startDate": "1715508000000",
+              "endDate": "1715558399000",
+              "team1": {
+                "teamId": 58,
+                "teamName": "Chennai Super Kings",
+                "teamSName": "CSK",
+                "imageId": 225641
+              },
+              "team2": {
+                "teamId": 64,
+                "teamName": "Rajasthan Royals",
+                "teamSName": "RR",
+                "imageId": 225647
+              },
+              "venueInfo": {
+                "ground": "MA Chidambaram Stadium",
+                "city": "Chennai",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            },
+            {
+              "matchId": 91668,
+              "seriesId": 7607,
+              "matchDesc": "62nd Match",
+              "matchFormat": "T20",
+              "startDate": "1715522400000",
+              "endDate": "1715558399000",
+              "team1": {
+                "teamId": 59,
+                "teamName": "Royal Challengers Bengaluru",
+                "teamSName": "RCB",
+                "imageId": 225643
+              },
+              "team2": {
+                "teamId": 61,
+                "teamName": "Delhi Capitals",
+                "teamSName": "DC",
+                "imageId": 225644
+              },
+              "venueInfo": {
+                "ground": "M.Chinnaswamy Stadium",
+                "city": "Bengaluru",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1715472000000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "MON, MAY 13 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91677,
+              "seriesId": 7607,
+              "matchDesc": "63rd Match",
+              "matchFormat": "T20",
+              "startDate": "1715608800000",
+              "endDate": "1715644799000",
+              "team1": {
+                "teamId": 971,
+                "teamName": "Gujarat Titans",
+                "teamSName": "GT",
+                "imageId": 235085
+              },
+              "team2": {
+                "teamId": 63,
+                "teamName": "Kolkata Knight Riders",
+                "teamSName": "KKR",
+                "imageId": 225646
+              },
+              "venueInfo": {
+                "ground": "Narendra Modi Stadium",
+                "city": "Ahmedabad",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1715558400000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "TUE, MAY 14 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91681,
+              "seriesId": 7607,
+              "matchDesc": "64th Match",
+              "matchFormat": "T20",
+              "startDate": "1715695200000",
+              "endDate": "1715731199000",
+              "team1": {
+                "teamId": 61,
+                "teamName": "Delhi Capitals",
+                "teamSName": "DC",
+                "imageId": 225644
+              },
+              "team2": {
+                "teamId": 966,
+                "teamName": "Lucknow Super Giants",
+                "teamSName": "LSG",
+                "imageId": 389444
+              },
+              "venueInfo": {
+                "ground": "Arun Jaitley Stadium",
+                "city": "Delhi",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1715644800000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "WED, MAY 15 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91686,
+              "seriesId": 7607,
+              "matchDesc": "65th Match",
+              "matchFormat": "T20",
+              "startDate": "1715781600000",
+              "endDate": "1715817599000",
+              "team1": {
+                "teamId": 64,
+                "teamName": "Rajasthan Royals",
+                "teamSName": "RR",
+                "imageId": 225647
+              },
+              "team2": {
+                "teamId": 65,
+                "teamName": "Punjab Kings",
+                "teamSName": "PBKS",
+                "imageId": 225648
+              },
+              "venueInfo": {
+                "ground": "Barsapara Cricket Stadium",
+                "city": "Guwahati",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1715731200000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "THU, MAY 16 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91690,
+              "seriesId": 7607,
+              "matchDesc": "66th Match",
+              "matchFormat": "T20",
+              "startDate": "1715868000000",
+              "endDate": "1715903999000",
+              "team1": {
+                "teamId": 255,
+                "teamName": "Sunrisers Hyderabad",
+                "teamSName": "SRH",
+                "imageId": 225649
+              },
+              "team2": {
+                "teamId": 971,
+                "teamName": "Gujarat Titans",
+                "teamSName": "GT",
+                "imageId": 235085
+              },
+              "venueInfo": {
+                "ground": "Rajiv Gandhi International Stadium",
+                "city": "Hyderabad",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1715817600000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "FRI, MAY 17 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91699,
+              "seriesId": 7607,
+              "matchDesc": "67th Match",
+              "matchFormat": "T20",
+              "startDate": "1715954400000",
+              "endDate": "1715990399000",
+              "team1": {
+                "teamId": 62,
+                "teamName": "Mumbai Indians",
+                "teamSName": "MI",
+                "imageId": 225645
+              },
+              "team2": {
+                "teamId": 966,
+                "teamName": "Lucknow Super Giants",
+                "teamSName": "LSG",
+                "imageId": 389444
+              },
+              "venueInfo": {
+                "ground": "Wankhede Stadium",
+                "city": "Mumbai",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1715904000000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "SAT, MAY 18 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91704,
+              "seriesId": 7607,
+              "matchDesc": "68th Match",
+              "matchFormat": "T20",
+              "startDate": "1716040800000",
+              "endDate": "1716076799000",
+              "team1": {
+                "teamId": 59,
+                "teamName": "Royal Challengers Bengaluru",
+                "teamSName": "RCB",
+                "imageId": 225643
+              },
+              "team2": {
+                "teamId": 58,
+                "teamName": "Chennai Super Kings",
+                "teamSName": "CSK",
+                "imageId": 225641
+              },
+              "venueInfo": {
+                "ground": "M.Chinnaswamy Stadium",
+                "city": "Bengaluru",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1715990400000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "SUN, MAY 19 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91713,
+              "seriesId": 7607,
+              "matchDesc": "69th Match",
+              "matchFormat": "T20",
+              "startDate": "1716112800000",
+              "endDate": "1716163199000",
+              "team1": {
+                "teamId": 255,
+                "teamName": "Sunrisers Hyderabad",
+                "teamSName": "SRH",
+                "imageId": 225649
+              },
+              "team2": {
+                "teamId": 65,
+                "teamName": "Punjab Kings",
+                "teamSName": "PBKS",
+                "imageId": 225648
+              },
+              "venueInfo": {
+                "ground": "Rajiv Gandhi International Stadium",
+                "city": "Hyderabad",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            },
+            {
+              "matchId": 91717,
+              "seriesId": 7607,
+              "matchDesc": "70th Match",
+              "matchFormat": "T20",
+              "startDate": "1716127200000",
+              "endDate": "1716163199000",
+              "team1": {
+                "teamId": 64,
+                "teamName": "Rajasthan Royals",
+                "teamSName": "RR",
+                "imageId": 225647
+              },
+              "team2": {
+                "teamId": 63,
+                "teamName": "Kolkata Knight Riders",
+                "teamSName": "KKR",
+                "imageId": 225646
+              },
+              "venueInfo": {
+                "ground": "Barsapara Cricket Stadium",
+                "city": "Guwahati",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        },
+        {
+          "seriesName": "T20 Blast 2024",
+          "matchInfo": [
+            {
+              "matchId": 85190,
+              "seriesId": 7336,
+              "matchDesc": "North Group",
+              "matchFormat": "T20",
+              "startDate": "1716141600000",
+              "endDate": "1716163199000",
+              "team1": {
+                "teamId": 140,
+                "teamName": "Warwickshire",
+                "teamSName": "WARKS",
+                "imageId": 172207
+              },
+              "team2": {
+                "teamId": 145,
+                "teamName": "Leicestershire",
+                "teamSName": "LEIC",
+                "imageId": 172212
+              },
+              "venueInfo": {
+                "ground": "Edgbaston",
+                "city": "Birmingham",
+                "country": "England",
+                "timezone": "+01:00"
+              }
+            }
+          ],
+          "seriesId": 7336,
+          "seriesHomeCountry": 9,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1716076800000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "TUE, MAY 21 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91722,
+              "seriesId": 7607,
+              "matchDesc": "Qualifier 1",
+              "matchFormat": "T20",
+              "startDate": "1716300000000",
+              "endDate": "1716335999000",
+              "team1": {
+                "teamId": 106,
+                "teamName": "TBC",
+                "teamSName": "TBC",
+                "imageId": 172198
+              },
+              "team2": {
+                "teamId": 106,
+                "teamName": "TBC",
+                "teamSName": "TBC",
+                "imageId": 172198
+              },
+              "venueInfo": {
+                "ground": "Narendra Modi Stadium",
+                "city": "Ahmedabad",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1716249600000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "WED, MAY 22 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91731,
+              "seriesId": 7607,
+              "matchDesc": "Eliminator",
+              "matchFormat": "T20",
+              "startDate": "1716386400000",
+              "endDate": "1716422399000",
+              "team1": {
+                "teamId": 106,
+                "teamName": "TBC",
+                "teamSName": "TBC",
+                "imageId": 172198
+              },
+              "team2": {
+                "teamId": 106,
+                "teamName": "TBC",
+                "teamSName": "TBC",
+                "imageId": 172198
+              },
+              "venueInfo": {
+                "ground": "Narendra Modi Stadium",
+                "city": "Ahmedabad",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1716336000000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "FRI, MAY 24 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91735,
+              "seriesId": 7607,
+              "matchDesc": "Qualifier 2",
+              "matchFormat": "T20",
+              "startDate": "1716559200000",
+              "endDate": "1716595199000",
+              "team1": {
+                "teamId": 106,
+                "teamName": "TBC",
+                "teamSName": "TBC",
+                "imageId": 172198
+              },
+              "team2": {
+                "teamId": 106,
+                "teamName": "TBC",
+                "teamSName": "TBC",
+                "imageId": 172198
+              },
+              "venueInfo": {
+                "ground": "MA Chidambaram Stadium",
+                "city": "Chennai",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1716508800000"
+    }
+  },
+  {
+    "scheduleAdWrapper": {
+      "date": "SUN, MAY 26 2024",
+      "matchScheduleList": [
+        {
+          "seriesName": "Indian Premier League 2024",
+          "matchInfo": [
+            {
+              "matchId": 91740,
+              "seriesId": 7607,
+              "matchDesc": "Final",
+              "matchFormat": "T20",
+              "startDate": "1716732000000",
+              "endDate": "1716767999000",
+              "team1": {
+                "teamId": 106,
+                "teamName": "TBC",
+                "teamSName": "TBC",
+                "imageId": 172198
+              },
+              "team2": {
+                "teamId": 106,
+                "teamName": "TBC",
+                "teamSName": "TBC",
+                "imageId": 172198
+              },
+              "venueInfo": {
+                "ground": "MA Chidambaram Stadium",
+                "city": "Chennai",
+                "country": "India",
+                "timezone": "+05:30"
+              }
+            }
+          ],
+          "seriesId": 7607,
+          "seriesHomeCountry": 2,
+          "seriesCategory": "League"
+        }
+      ],
+      "longDate": "1716681600000"
+    }
+  }
+]

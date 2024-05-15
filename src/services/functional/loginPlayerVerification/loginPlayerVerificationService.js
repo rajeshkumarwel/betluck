@@ -5,6 +5,7 @@ import { ENDPOINTS} from '../../../shared/constants/endPoints';
 export const loginPlayerVerificationList = (param) => { 
     return request( 
         METHOD_TYPES.POST,
-        ENDPOINTS.loginPlayerVerification + '?enteredOtp=' + param.otpData.OTP
+        ENDPOINTS.loginPlayerVerification,
+        param.otpData
     );
 }

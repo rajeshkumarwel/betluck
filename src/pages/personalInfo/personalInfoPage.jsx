@@ -14,6 +14,7 @@ const PersonalInfoPage = () => {
 	const { id } = useParams();
 
 	const [superUser, setSuperUser] = useState(false);
+	const [playerRole, setPlayerRole] = useState(localStorage.getItem('PlayerRole'));
 
 	useEffect(()=>{
 		const playerinfo = {
@@ -49,8 +50,8 @@ const PersonalInfoPage = () => {
 			<main className="content">
 				<div className="container-fluid p-0">
 				<h1 className="h3">
-					<strong>{playerInfomation?.player?.playerName ? playerInfomation?.player?.playerName: playerInfomation?.player?.email.split('@')[0]}</strong>
-					 <span className="card-title"> {playerInfomation?.player?.role}</span></h1>
+					<strong>{'Rajeshkumar'}</strong>
+					 <span className="card-title"> {'SuperUser'}</span></h1>
 					<div className="row">
 						<div className="col-xl-6 col-xxl-5 d-flex">
 							<div className="w-100">
@@ -62,9 +63,9 @@ const PersonalInfoPage = () => {
 									<div>
 										<span 
 										
-										className={(playerInfomation?.player?.status === "Active" ? "badge bg-success":"") || (playerInfomation?.player?.status === 'Invited' ? "badge bg-warning":"") || (playerInfomation?.player?.status === 'Expired' ? "badge bg-danger":"")}
+										className={ "badge bg-success"}
 										
-										>{playerInfomation?.player?.status}</span>
+										>{'Active'}</span>
 									</div>	
 									</div>
 								</div>
@@ -98,44 +99,44 @@ const PersonalInfoPage = () => {
 										<tr>
 											<td>
 											<div><small className="text-muted">Login details</small></div>
-                                                <div>{playerInfomation?.player?.email}</div>                                               
+                                                <div>{'Rajeshkumar.wel@gmail.com'}</div>                                               
                                             </td>
 											<td></td>						
 										</tr>
 										<tr>
 											<td>
 											<div><small className="text-muted">Full Name</small></div>
-                                                <div>{playerInfomation?.player?.playerName ? playerInfomation?.player?.playerName: playerInfomation?.player?.email.split('@')[0]}</div>                                                
+                                                <div>{'Rajeshkumar'}</div>                                                
                                             </td>
-											<td className="text-end"><Link className="text-link" to={`/fullname/${id}`}>Edit</Link></td>
+											<td className="text-end"><Link className="text-link" to={`/fullname/2`}>Edit</Link></td>
 										</tr>
 										<tr>
 											<td>
 											<div><small className="text-muted">Withdraw UPI ID</small></div>
-                                                <div>{playerInfomation?.player?.upi ? playerInfomation?.player?.upi:""}</div>
+                                                <div>{'rajesh@okhdfc'}</div>
                                             </td>
-											<td className="text-end"><Link className="text-link" to={`/addwithdrawaddress/${id}`} >Edit</Link></td>
+											<td className="text-end"><Link className="text-link" to={`/addwithdrawaddress/2`} >Edit</Link></td>
 										</tr>
 										<tr>
 											<td>
 											<div><small className="text-muted">Balance</small></div>
                                                 <div>
 												<i className="bi bi-currency-rupee"></i> 
-													{playerInfomation?.player?.balance ? playerInfomation?.player?.balance:"00.00"}</div>
+													{"00.00"}</div>
                                             </td>
-											<td className="text-end"><Link className="text-link" to={"#"}>Add balance</Link></td>
+											<td className="text-end"><Link className="text-link" to={"/deposit"}>Add balance</Link></td>
 										</tr>
 										<tr>
 											<td>
 											<div><small className="text-muted">Player reference</small></div>
-                                                <div>{playerInfomation?.player?.reference}</div>
+                                                <div>{'Dinesh'}</div>
                                             </td>
 											<td></td>
 										</tr>
 										<tr>
 											<td>
 											<div><small className="text-muted">Player permission</small></div>
-                                                <div>{playerInfomation?.player?.role}</div>
+                                                <div>{'SuperUser'}</div>
                                             </td>
 										</tr>
 										
@@ -152,7 +153,7 @@ const PersonalInfoPage = () => {
 									<div className="col-12">
 										<div className="card">
 											<div className="card-body card-body-txt">
-											<Link to={'#'}>
+											<Link to={'/transactionhistory'}>
 												<div className="d-flex">
 													<div className="col mt-0 profile-text">
 														<h5 className="card-title mb-0"><span className="pi pi-history profile-icon-text"></span> Transaction history </h5>    
@@ -166,14 +167,14 @@ const PersonalInfoPage = () => {
 								</div>
 							</div>
 						</div>
-					</div>
-					{(playerInfomation?.player?.role === 'SuperUser' || playerInfomation?.player?.role === 'Admin') &&
+					</div> 
+					
 						<div className="row">
 							<div className="col-12 col-lg-6">
 								<div>
 									<div className="row text-center">
 										<div className="d-grid gap-2 mb-3 col-6">
-											<button onClick={handleDeleteClick} className="btn btn-danger">Delete Player</button>
+											<Link to={"/manageplayer1"} className="btn btn-danger">Delete Player</Link>
 										</div>
 										<div className="d-grid gap-2 mb-3 col-6">
 											<Link to={"/manageplayer2"} className="btn btn-secondary">Freeze account</Link>
@@ -183,7 +184,7 @@ const PersonalInfoPage = () => {
 							</div>
 						
 						</div>
-						}
+						
 
 					
 

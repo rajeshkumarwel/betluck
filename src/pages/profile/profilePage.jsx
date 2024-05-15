@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector} from 'react-redux';
 import { Link, useNavigate } from "react-router-dom";
 import "./profilePage.css";
@@ -11,6 +11,7 @@ const ProfilePage = () => {
 
 	const dispatch = useDispatch();
 	const navigate = useNavigate();
+	const [insuffiecentfund, setInsuffiecentfund] = useState(false);
 
 	useEffect(()=>{
 		const playerinfo = {
@@ -21,7 +22,14 @@ const ProfilePage = () => {
 
 	const playerInfomation = useSelector((state) => state.playerInformationList.playerInformation)
 	
-
+	const handleWithdraw = () => {
+		
+	//	if(playerInfomation?.player?.balance) {
+			navigate('/withdraw')
+		//} else {
+			//setInsuffiecentfund(true)
+		//}
+	}
     return(
         <div className="main">
 			<Navbar navitem={false} />
@@ -29,10 +37,25 @@ const ProfilePage = () => {
 			<main className="content">
 				<div className="container-fluid p-0">
 
-					<h1 className="h3"><strong>{playerInfomation?.player?.playerName ? playerInfomation?.player?.playerName:playerInfomation?.player?.email.split('@')[0]}</strong> <span className="card-title">{playerInfomation?.player?.role}</span></h1>
-					<Link to={`/personalinfo/${playerInfomation?.player?.playerId}`}> <h5 className="card-title mb-3">Account ID: {playerInfomation?.player?.playerId} <span className="pi pi-copy"></span></h5> </Link>
-                    
-
+					<h1 className="h3"><strong>Rajeshkumar</strong> <span className="card-title">{'SuperUser'}</span></h1>
+					<Link to={`/personalinfo/${playerInfomation?.player?.playerId}`}> <h5 className="card-title mb-3">Account ID: {'100023'} <span className="pi pi-copy"></span></h5> </Link>
+                    {insuffiecentfund &&
+					<div className="row">
+						<div className="col-xl-6 col-xxl-5 d-flex">
+							<div className="w-100">
+								<div className="row">
+									<div className="col-sm-12">
+										<div className="card players-danger mt-3">
+											<div className="card-body text-center">
+												<h4 className="mt-1"><strong>{'Invalid withdrawal amount or insufficient balance'}</strong></h4>
+											</div>
+										</div>
+									</div>									
+								</div>
+							</div>
+						</div>
+					</div>	
+					}
 					<div className="row">
 						<div className="col-xl-6 col-xxl-5 d-flex">
 							<div className="w-100">
@@ -43,11 +66,17 @@ const ProfilePage = () => {
 												<div className="row">
 													<div className="col-6 mt-0">
 														<h5 className="card-title">Available balance</h5>
-                                                        <h1 className="mt-1 text-danger"><strong><i className="bi bi-currency-rupee"></i>00.00</strong></h1>
+                                                        <h1 className="mt-1 text-danger"><strong><i className="bi bi-currency-rupee"></i>{playerInfomation?.player?.balance ? playerInfomation?.player?.balance: "00.00"}</strong></h1>
 													</div>
                                                     <div className="col-6 mt-0">
 														<h5 className="card-title text-end">Pending transaction</h5>
-                                                        <h1 className="mt-1 text-end text-danger"><strong><i className="bi bi-currency-rupee"></i>0.00</strong></h1>
+                                                        <h1 className="mt-1 text-end text-danger">
+														
+															
+															<strong><i className="bi bi-currency-rupee"></i>
+															{(playerInfomation?.player?.pendingAmount || playerInfomation?.player?.pendingWAmount) ? (playerInfomation?.player?.pendingAmount + playerInfomation?.player?.pendingWAmount) : "00.00"}	
+{/* {playerInfomation?.player?.pendingAmount ? (playerInfomation?.player?.pendingAmount+(playerInfomation?.player?.pendingWAmount ? playerInfomation?.player?.pendingWAmount:0)):"00.00"} */}
+</strong></h1>
 													</div>
 												</div>
 												
@@ -77,7 +106,7 @@ const ProfilePage = () => {
 										</Link>
 									</div>
 									<div className="col-6">
-										<Link to={"/withdraw"} >	
+										<div onClick={()=>handleWithdraw()}>	
 										<div className="card">
 											<div className="card-body text-center">
 												<h1 className="mt-1 mb-3"><span className="pi pi-money-bill"></span></h1>
@@ -86,7 +115,7 @@ const ProfilePage = () => {
 												</div>
 											</div>
 										</div>
-										</Link>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -102,7 +131,7 @@ const ProfilePage = () => {
 									<div className="col-12">
 										<div className="card">
 											<div className="card-body card-body-txt">
-												<Link to={`/personalinfo/${playerInfomation?.player?.playerId}`}>
+												<Link to={`/personalinfo/2`}>
 													<div className="d-flex">
 														
 															<div className="col mt-0 profile-text">
@@ -163,7 +192,7 @@ const ProfilePage = () => {
 							</div>
 						</div>
 					</div>
-					{(playerInfomation?.player?.role === 'SuperUser' || playerInfomation?.player?.role === 'Admin') && <>
+					 <>
                     <div className="row">
 						<div className="col-xl-6 col-xxl-5 d-flex">
 							<div className="w-100">
@@ -215,7 +244,7 @@ const ProfilePage = () => {
 									<div className="col-12">
 										<div className="card">
 											<div className="card-body card-body-txt">
-											<Link to={'#'}>
+											<Link to={'/managetransaction'}>
 												<div className="d-flex">
 													<div className="col mt-0 profile-text">
 														<h5 className="card-title mb-0"><span className="pi pi-id-card profile-icon-text"></span> Manage transactions </h5>    
@@ -231,7 +260,7 @@ const ProfilePage = () => {
 						</div>
 					</div>
 					</>
-					}
+					
                     <div className="text-center mb-3">
 							<Link to={'#'} onClick={() => navigate(-1)}>Go Back</Link>
 						</div>

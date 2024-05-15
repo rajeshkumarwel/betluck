@@ -103,10 +103,10 @@ const FullnamePage = () => {
 							
 							
 							<div className="d-grid gap-2 mt-3">
-								<button type="submit" className="btn btn-lg btn-danger">
-								{!updatePlayernameLoader ? ('Save details'):('Loading...')}
+								<Link to={"/personalinfo/2"} className="btn btn-lg btn-danger">
+								Save details
 																		
-									</button>
+									</Link>
 							</div>
 						</form>
 							

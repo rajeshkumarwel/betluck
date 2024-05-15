@@ -21,9 +21,9 @@ instance.interceptors.response.use(
         return response;
     },
     (error) => {
-        if(error.response.status === 401) {
-            window.location.href = '/';
-        }
+        // if(error.response.status === 401) {
+        //     window.location.href = '/';
+        // }
         return Promise.reject(error);
     }
 )

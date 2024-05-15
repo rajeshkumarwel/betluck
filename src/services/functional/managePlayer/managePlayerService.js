@@ -8,3 +8,10 @@ export const managePlayerList = () => {
         ENDPOINTS.managePlayerList
     );
 }
+
+export const manageTransactionPlayerList = () => { 
+    return request( 
+        METHOD_TYPES.GET,
+        ENDPOINTS.manageTransactionPlayerList
+    );
+}
